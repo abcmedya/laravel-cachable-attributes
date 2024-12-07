@@ -1,6 +1,6 @@
 <?php
 
-namespace Astrotomic\CachableAttributes;
+namespace Abcmedya\CachableAttributes;
 
 use Closure;
 
