@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="true"
+>
+    <testsuites>
+        <testsuite name="Feature tests">
+            <directory suffix=".php">tests/Feature</directory>
+        </testsuite>
+        <testsuite name="Spec tests">
+            <directory suffix=".php">tests/Spec</directory>
+        </testsuite>
+        <testsuite name="Unit tests">
+            <directory suffix=".php">tests/Unit</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="false">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
+    <php>
+        <env name="DB_CONNECTION" value="testing"/>
+        <env name="CACHE_DRIVER" value="array"/>
+    </php>
+</phpunit>

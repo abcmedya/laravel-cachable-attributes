@@ -1,0 +1,58 @@
+{
+  "name": "abcmedya/laravel-cachable-attributes",
+  "description": "Allows to cache attribute accessor values in an easy way.",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "eloquent",
+    "model",
+    "cache",
+    "attribute",
+    "accessor",
+    "getter"
+  ],
+  "authors": [
+    {
+      "name": "Tom Witkowski",
+      "email": "gummibeer@astrotomic.info",
+      "homepage": "https://gummibeer.de",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://astrotomic.info",
+  "support": {
+    "email": "dev@astrotomic.info",
+    "issues": "https://github.com/Astrotomic/laravel-cachable-attributes/issues",
+    "source": "https://github.com/Astrotomic/laravel-cachable-attributes"
+  },
+  "require": {
+    "php": "^7.2 || ^8.0",
+    "illuminate/cache": "5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
+    "illuminate/contracts": "5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
+    "illuminate/database": "5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0"
+  },
+  "require-dev": {
+    "illuminate/support": "5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
+    "orchestra/testbench": "3.8.* || ^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
+    "phpunit/phpunit": "^8.3 || ^9.0 || ^10.5"
+  },
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Abcmedya\\CachableAttributes\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Abcmedya\\CachableAttributes\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html=coverage"
+  }
+}
